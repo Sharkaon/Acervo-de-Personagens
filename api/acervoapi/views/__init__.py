@@ -1,1 +1,2 @@
-from .personagem import *
+from .personagem import PersonagemViewSet
+from .dublador import DubladorViewSet
