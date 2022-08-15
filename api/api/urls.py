@@ -15,11 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from rest_framework import routers
-from acervoapi.views import *
-
-router = routers.DefaultRouter()
-router.register(r'personagens', PersonagemViewSet)
+from acervoapi.urls import router
 
 urlpatterns = [
     path('admin/', admin.site.urls),
